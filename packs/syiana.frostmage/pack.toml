@@ -1,0 +1,3 @@
+key = "syiana.frostmage"
+requires = ["base"]
+order = 10

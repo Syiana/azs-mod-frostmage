@@ -1,0 +1,19 @@
+# The mage slot as a frost caster: its starter pulses frost around the hero and gathers Chill.
+[[override]]
+kind = "class"
+key = "mage"
+health = 260
+resources = [{ key = "chill", max = 3, name = { en = "Chill", de = "Kälte", fr = "Froid", es = "Frío", pt = "Frio", ru = "Стужа", pl = "Chłód", tr = "Ayaz", it = "Gelo", ja = "Gelo", zh = "Gelo", ko = "Gelo" } }]
+
+[[override]]
+kind = "spell"
+key = "fireball"
+school = "frost"
+shape = { nova = { radius = 8.0 } }
+hit = 18
+cooldown = 2.0
+range = 8.0
+rider = { root = { secs = 2.0 } }
+builds = { resource = "chill", n = 1 }
+name = { en = "Glacial Pulse", de = "Gletscherpuls", fr = "Pulsation glaciale", es = "Pulso glacial", pt = "Pulso Glacial", ru = "Ледниковый импульс", pl = "Lodowcowy puls", tr = "Buzul Nabzı", it = "Impulso glaciale", ja = "Impulso glaciale", zh = "Impulso glaciale", ko = "Impulso glaciale" }
+icon = "Spell_Frost_FrostNova"
